@@ -1,0 +1,25 @@
+.search {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background: white;
+  padding-top: 50px;
+  z-index: 200;
+}
+
+.search__button {
+  background-color: #ff385c !important;
+  color: white !important;
+  text-transform: inherit;
+  margin-top: 20px !important;
+  padding: 10px 50px !important;
+  font-weight: 700 !important;
+}
+
+.search__button:last-child {
+  margin-left: 14px;
+}

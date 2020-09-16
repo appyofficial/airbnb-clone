@@ -1,0 +1,154 @@
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  width: 100%;
+  z-index: 9999;
+  padding: 10px 0;
+}
+
+.header__icon {
+  margin-left: 20px;
+  object-fit: contain;
+  height: 35px;
+}
+
+.header__center {
+  margin: 0px 50px;
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  background-color: #ffffff !important;
+  border: 1px solid #dddddd !important;
+  border-radius: 24px !important;
+  color: #222222 !important;
+  display: -webkit-inline-box !important;
+  display: -moz-inline-box !important;
+  display: -ms-inline-flexbox !important;
+  display: -webkit-inline-flex !important;
+  display: inline-flex !important;
+  max-width: 100% !important;
+  text-align: left !important;
+  -webkit-transition: box-shadow 0.2s ease !important;
+  -moz-transition: box-shadow 0.2s ease !important;
+  transition: box-shadow 0.2s ease !important;
+  vertical-align: middle !important;
+}
+
+.header__center > input {
+  width: 250px;
+  margin: 10px;
+  border: none;
+  outline-width: 0;
+}
+
+.header__right {
+  display: flex;
+  align-items: center;
+  width: 15vw;
+  margin-right: 80px;
+  justify-content: space-between;
+}
+
+.header__centerbtn {
+  -webkit-box-align: center !important;
+  -ms-flex-align: center !important;
+  -webkit-appearance: none !important;
+  -moz-appearance: none !important;
+  appearance: none !important;
+  background: transparent !important;
+  border: 1px solid transparent !important;
+  color: inherit !important;
+  cursor: pointer !important;
+  display: -webkit-box !important;
+  display: -moz-box !important;
+  display: -ms-flexbox !important;
+  display: -webkit-flex !important;
+  justify-content: space-between;
+  display: flex !important;
+  font-family: inherit !important;
+  font-size: inherit !important;
+  font-weight: inherit !important;
+  line-height: inherit !important;
+  margin: -1px !important;
+  outline: none !important;
+  overflow: visible !important;
+  padding: 0px !important;
+  text-align: inherit !important;
+  text-decoration: none !important;
+  -webkit-user-select: auto !important;
+  -moz-user-select: auto !important;
+  -ms-user-select: auto !important;
+  user-select: auto !important;
+  -webkit-align-items: center !important;
+  align-items: center !important;
+  border-radius: 4px !important;
+  -webkit-flex: 0 1 auto !important;
+  -ms-flex: 0 1 auto !important;
+  flex: 0 1 auto !important;
+  height: 48px !important;
+  min-width: 0px !important;
+  position: relative !important;
+  z-index: 1 !important;
+}
+
+.header__centerbtn:last-of-type {
+  border-top-right-radius: inherit !important;
+  border-bottom-right-radius: inherit !important;
+}
+
+.header__centerbtn:first-of-type {
+  padding-left: 8px !important;
+  border-top-left-radius: inherit !important;
+  border-bottom-left-radius: inherit !important;
+}
+
+.header__centerbtn:only-of-type {
+  width: 300px !important;
+}
+
+.header__centerbtntext {
+  font-size: 14px !important;
+  line-height: 18px !important;
+  -webkit-flex: 1 1 auto !important;
+  -ms-flex: 1 1 auto !important;
+  flex: 1 1 auto !important;
+  min-width: 0px !important;
+  font-weight: 600 !important;
+  padding: 0 16px !important;
+  text-overflow: ellipsis !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+}
+
+.header__searchText {
+  text-rendering: auto;
+  color: -internal-light-dark(buttontext, rgb(170, 170, 170));
+  letter-spacing: normal;
+  word-spacing: normal;
+  text-transform: none;
+  text-indent: 0px;
+  text-shadow: none;
+  text-align: center;
+  cursor: default;
+  font: 400 13.3333px Arial;
+  margin-left: 10px;
+  font-weight: 600;
+}
+
+.header__centerbtnIcon {
+  background-color: #ff385c !important;
+  border-radius: 50% !important;
+  color: #ffffff !important;
+  -webkit-flex: 0 0 32 !important;
+  -ms-flex: 0 0 32 !important;
+  flex: 0 0 32 !important;
+  height: 32px !important;
+  margin: 7px 7px 7px 0 !important;
+  padding: 5px !important;
+  width: 32px !important;
+}

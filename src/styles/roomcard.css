@@ -1,0 +1,70 @@
+.roomcard {
+  display: flex;
+  position: relative;
+  padding: 20px;
+  margin: 20px;
+  border-bottom: 1px solid grey;
+  cursor: pointer;
+  height: 300px;
+}
+
+.roomcard:hover {
+  opacity: 0.8;
+}
+
+.roomcard > img {
+  height: auto;
+  max-width: 350px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.roomcard__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding-left: 20px;
+}
+
+.roomcard__heart {
+  position: absolute;
+  top: 20px;
+  right: 40px;
+}
+
+.roomcard__infoTop {
+  width: 40vw;
+}
+
+.roomcard__info > h3 {
+  font-weight: 30px;
+  text-transform: inherit;
+  margin: 5px;
+}
+
+.roomcard__infoTop > p {
+  margin-top: 10px;
+  font-size: 13px;
+  color: grey;
+}
+
+.roomcard__infoBottom {
+  display: flex;
+  justify-content: space-between;
+}
+
+.roomcard__footerStar {
+  color: red;
+  display: flex;
+  align-items: center;
+}
+
+.roomcard__price > p {
+  text-align: right;
+}
+
+.roomcard__price {
+  position: absolute;
+  bottom: 20px;
+  right: 30px;
+}
