@@ -29,7 +29,11 @@ export default function Search({ onClick }) {
 
   return (
     <div className="search">
-      <DateRangePicker ranges={[selectionRange]} onChange={handleSelect} />
+      <DateRangePicker
+        ranges={[selectionRange]}
+        onChange={handleSelect}
+        minDate={new Date()}
+      />
       <div className="search__buttonContainer">
         <Button className="search__button" onClick={handleSearchButton}>
           Search

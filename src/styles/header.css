@@ -17,6 +17,8 @@
 }
 
 .header__center {
+  flex: 1;
+  max-width: 350px;
   margin: 0px 50px;
   -webkit-box-align: center !important;
   -ms-flex-align: center !important;
@@ -31,7 +33,7 @@
   display: -ms-inline-flexbox !important;
   display: -webkit-inline-flex !important;
   display: inline-flex !important;
-  max-width: 100% !important;
+
   text-align: left !important;
   -webkit-transition: box-shadow 0.2s ease !important;
   -moz-transition: box-shadow 0.2s ease !important;
@@ -108,7 +110,9 @@
 }
 
 .header__centerbtn:only-of-type {
-  width: 300px !important;
+  width: 100% !important;
+  max-width: 350px;
+  min-width: 100px;
 }
 
 .header__centerbtntext {
@@ -151,4 +155,21 @@
   margin: 7px 7px 7px 0 !important;
   padding: 5px !important;
   width: 32px !important;
+}
+
+.header__mobileRight {
+  display: none;
+}
+
+@media only screen and (max-width: 700px) {
+  .header__mobileRight {
+    display: none;
+  }
+  .header__right {
+    display: none;
+  }
+
+  .header__centerbtn {
+    width: 100% !important;
+  }
 }

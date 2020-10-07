@@ -8,13 +8,13 @@ export default function Banner() {
   return (
     <div className="banner">
       <div className="banner__info">
-        <h1>Get out and explore your imagination</h1>
+        <h1>Get out and explore Stockholm</h1>
         <h5>
-          Let's explore the new places and share the best memories of our life
-          together.
+          From fika to small beautiful streets of old town, find yourself
+          emerged in wonderful capital of Sweden.
         </h5>
         <Button onClick={() => history.push("/search")} variant="outlined">
-          Explore Nearby
+          Stay Nearby
         </Button>
       </div>
     </div>

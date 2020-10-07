@@ -13,14 +13,33 @@ export default function RoomCard({
   total,
 }) {
   return (
-    <div className="roomcard">
-      <img src={img} alt={title} />
+    <div className="listening">
+      <div className="listening__img">
+        <img src={img} alt={title} width="100%" height="100%" />
+      </div>
+      <div className="listening__content">
+        <div className="listening__details">
+          
+        </div>
+        <div class="listening__price">{`From ${price} kr/night`}</div>
+      </div>
+    </div>
+  );
+}
+
+/*
+
+ <div className="roomcard">
+      <div className="roomcard__image">
+        <img src={img} alt={title} />
+      </div>
+
       <FavoriteBorderIcon className="roomcard__heart" />
       <div className="roomcard__info">
         <div className="roomcard__infoTop">
           <p>{location}</p>
           <h3>{title}</h3>
-          <p>_________</p>
+          <hr />
           <p>{summary}</p>
         </div>
         <div className="roomcard__infoBottom">
@@ -35,5 +54,5 @@ export default function RoomCard({
         </div>
       </div>
     </div>
-  );
-}
+
+*/

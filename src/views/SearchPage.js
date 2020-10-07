@@ -3,7 +3,6 @@ import "../styles/search_page.css";
 import Button from "@material-ui/core/Button";
 import RoomCard from "../components/RoomCard";
 import stockholm from "../data/listenings/stockholm";
-console.log(stockholm.length);
 
 export default function SearchPage() {
   return (
@@ -21,16 +20,18 @@ export default function SearchPage() {
         ))}
       </div>
       <div>
-        <RoomCard
-          key={stockholm[0].id}
-          title={stockholm[0].name}
-          img={stockholm[0].picture_url}
-          location={stockholm[0].street}
-          summary={stockholm[0].summary}
-          rating={stockholm[0].review_scores_rating}
-          price={stockholm[0].price}
-          total=""
-        />
+        {stockholm.map((x) => (
+          <RoomCard
+            key={stockholm[0].id}
+            title={x.name}
+            img={x.picture_url}
+            location={x.street}
+            summary={x.summary}
+            rating={x.review_scores_rating}
+            price={x.price}
+            total=""
+          />
+        ))}
       </div>
     </div>
   );

@@ -42,6 +42,7 @@ export default function Header() {
           <ExpandMoreIcon />
           <AccountCircleIcon />
         </div>
+        <div className="header__mobileRight"></div>
       </div>
       {showSearch && <Search onClick={() => setShowSearch(false)} />}
     </>

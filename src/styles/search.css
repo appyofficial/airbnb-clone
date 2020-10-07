@@ -23,3 +23,7 @@
 .search__button:last-child {
   margin-left: 14px;
 }
+
+.rdrDefinedRangesWrapper {
+  display: none !important;
+}
